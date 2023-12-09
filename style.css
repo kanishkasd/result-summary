@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap');
+
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsla(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 0.7);
+    --Persian-blue : hsla(241, 72%, 46%, 0);
+    
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+.container{
+    display: flex;
+
+}
+
+.left-side{
+    width: 45%;
+    background-color: var(--Light-royal-blue);
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.left-side h3{
+    color: white;
+    font-weight: 500;
+
+}
+
+.left-side h2{
+    color: white;
+     
+}
+
+.left-side .success-description{
+    color: light-grey;
+}
+
+.left-side .circle{
+    width: 150px;
+    height: 150px;
+    background-color: var(--Violet-blue);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle .obtained-percentage{
+    margin-left: 45px; 
+    color: white;
+    font-size: 3em;
+    left: 10px;
+    font-weight: 700;
+}
+
+.circle .full-percentage{
+    color: lightgrey; 
+    margin-left: 45px;
+}
+
+.circle p{
+    position: absolute;
+    display: flex;
+    top: 30px;
+    display: block;
+}
+
+
+
+.right-side{
+    width: 45%;
+   background-color: white; 
+}
+
+.right-side h2{
+    font-size: 1.2em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li p{
+    display: inline-block;
+}
+

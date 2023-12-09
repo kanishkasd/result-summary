@@ -5,43 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+    <main>
+        <div class="container">
+            <div class="left-side">
+                <h3>Your Result</h3>
 
-  Your Result
-  76
-  of 100
+                <div class="circle">
+                    <p><span class="obtained-percentage">76</span><br>  <span class="full-percentage">of 100</span></p>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+                </div>
+                    <h2>Great</h2>
+                    <p class="success-description">
+                    You scored higher than 65% of the people who have taken these tests.
+                    </p>
 
-  Reaction
-  80 / 100
+            </div>
 
-  Memory
-  92 / 100
 
-  Verbal
-  61 / 100
+            <div class="right-side">
+                <h2>Summary</h2>
+                <ul class="card-summary">
+                    <li>
+                        <img src="./assets/images/icon-reaction.svg"> <p>reaction <span class="percentage">80 <span class="full-size">/ 100</span></span></p>
+                    </li> 
+                    <li>
+                        <img src="./assets/images/icon-memory.svg"> <p>Memory <span class="percentage">92  <span class="full-size">/ 100</span></span></p>
+                    </li> 
+                    <li>
+                        <img src="./assets/images/icon-visual.svg"> <p>Visual <span class="percentage">72 <span class="full-size">/ 100</span></span></p>
+                    </li> 
+                    <li>
+                        <img src="./assets/images/icon-verbal.svg"> <p>Verbal <span class="percentage">61 <span class="full-size">/ 100</span></span></p>
+                    </li> 
 
-  Visual
-  72 / 100
+                </ul>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+                <button class="continue-button">Continue</button>
+            </div>
+
+
+        </div>
+
+    </main>
 </body>
 </html>

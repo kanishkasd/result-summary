@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap');
 
-:root{
-    --Light-red: hsl(0, 100%, 67%, 0.05);
-    --Orangey-yellow: hsl(39, 100%, 56%,0.05);
-    --Green-teal: hsl(166, 100%, 37%, 0.05);
-    --Cobalt-blue: hsl(234, 85%, 45%, 0.05);
+:root {
+    --Light-red: hsl(0, 100%, 67%, 0.08);
+    --Orangey-yellow: hsl(39, 100%, 56%, 0.08);
+    --Green-teal: hsl(166, 100%, 37%, 0.08);
+    --Cobalt-blue: hsl(234, 85%, 45%, 0.08);
 
     --Light-slate-blue: hsl(252, 100%, 67%);
     --Light-royal-blue: hsla(241, 81%, 54%);
     --Violet-blue: hsla(256, 72%, 46%, 0.7);
-    --Persian-blue : hsla(241, 72%, 46%, 0);
-    
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
     --White: hsl(0, 0%, 100%);
     --Pale-blue: hsl(221, 100%, 96%);
     --Light-lavender: hsl(241, 100%, 89%);
     --Dark-gray-blue: hsl(224, 30%, 27%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Hanken Grotesk', sans-serif;
     height: 100vh;
     display: flex;
@@ -31,67 +31,64 @@ body{
     justify-content: center;
     background-color: var(--white);
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
-   justify-content: center;
-   margin-left: 200px;
+    justify-content: center;
 
 }
 
-.left-side{
-    position: absolute;
-    width: 17%;
-    left: 430px;
+.left-side {
+    width: 300px;
     background-image: linear-gradient(to top, hsla(241, 81%, 54%), hsla(241, 81%, 54%, 0.8));
     padding: 30px 10px 30px 10px;
-    margin-left: 100px;
     border-radius: 20px;
 }
 
-.left-side h3{
+.left-side h3 {
     color: white;
     font-weight: 500;
     padding: 0 0 20px 90px;
     opacity: 0.8;
 }
 
-.left-side h2{
+.left-side h2 {
     color: white;
     margin-left: 100px;
-     
+
 }
 
-.left-side .success-description{
+.left-side .success-description {
     color: light-grey;
     margin: 0;
     margin: 10px 20px 20px 20px;
     text-align: center;
 }
 
-.left-side .circle{
+.left-side .circle {
     width: 150px;
     height: 150px;
-    background-image: linear-gradient(to bottom,  hsla(256, 72%, 46%, 1),  hsla(256, 72%, 46%, 0.1));
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(256, 72%, 46%, 0.1));
     border-radius: 50%;
     position: relative;
     margin: 5px 0 20px 60px;
 }
 
-.circle .obtained-percentage{
-    margin-left: 45px; 
+.circle .obtained-percentage {
+    margin-left: 45px;
     color: white;
     font-size: 3em;
     left: 10px;
     font-weight: 700;
 }
 
-.circle .full-percentage{
-    color: lightgrey; 
+.circle .full-percentage {
+    color: lightgrey;
     margin-left: 45px;
 }
 
-.circle p{
+.circle p {
     position: absolute;
     display: flex;
     top: 30px;
@@ -100,29 +97,31 @@ body{
 
 
 
-.right-side{
-    min-width: 250px;
-    background-color: white; 
-    padding-left: 100px;
+.right-side {
+    width: 300px;
+    background-color: white;
+    padding-left: 40px;
+    margin-left: -20px;
     box-shadow: 0.5px 1px 4px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    
+    z-index: -1;
+
 }
 
-.right-side h2{
+.right-side h2 {
     font-size: 1.2em;
     padding: 22px 0px 20px 0px;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-li p{
+li p {
     display: inline-block;
 }
 
-ul li{
+ul li {
     margin-bottom: 20px;
     height: 40px;
 }
@@ -136,36 +135,36 @@ ul li{
     margin-right: 20px;
 }
 
-li img{
+li img {
     width: 17px;
     margin-left: 10px;
 }
 
-.success-description{
+.success-description {
     color: lightgrey;
 }
 
-ul li:nth-child(1){
+ul li:nth-child(1) {
     background-color: var(--Light-red);
-    color:hsl(0, 100%, 67%);
+    color: hsl(0, 100%, 67%);
     font-size: 0.9em;
 }
 
-ul li:nth-child(2){
+ul li:nth-child(2) {
     background-color: var(--Orangey-yellow);
-    color:hsl(39, 100%, 56%);
+    color: hsl(39, 100%, 56%);
     font-size: 0.9em;
 }
 
 
-ul li:nth-child(3){
+ul li:nth-child(3) {
     background-color: var(--Green-teal);
     color: hsl(166, 100%, 37%);
     font-size: 0.9em;
 }
 
 
-ul li:nth-child(4){
+ul li:nth-child(4) {
     background-color: var(--Cobalt-blue);
     color: hsl(234, 85%, 45%);
     font-size: 0.9em;
@@ -183,16 +182,73 @@ ul li:nth-child(4){
     font-weight: 400;
 }
 
-.continue-button{
+.continue-button {
     width: 200px;
     height: 40px;
     border: none;
-    background-image: linear-gradient(to bottom, hsla(241, 81%, 54%), hsla(241, 81%, 54%, 0.8));
     margin-bottom: 40px;
+    background-color: var(--Dark-gray-blue);
     margin-top: 12px;
+    margin-left: 20px;
     color: white;
     font-weight: 500;
     border-radius: 20px;
 }
 
 
+.continue-button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, hsla(241, 81%, 54%), hsla(241, 81%, 54%, 0.8));
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: black;
+    }
+    .container {
+        flex-direction: column;
+        width: 350px;
+
+ 
+    }
+
+    .left-side{
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        margin-bottom: -25px;
+        z-index: 1;
+    }
+
+    .left-side .circle{
+        margin-left: 90px;
+    }
+
+    .left-side h3{
+        margin-left: 20px;
+    }
+
+    .left-side h2{
+        margin-left: 130px;
+    }
+
+    .right-side{
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 0;
+        padding: 20px 0 0 50px;
+    }
+
+    .continue-button{
+        width: 280px;
+        height: 50px;
+        border-radius: 30px;
+        margin-left: -20px;
+    }
+
+    .continue-button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to bottom, hsla(241, 81%, 54%), hsla(241, 81%, 54%, 0.8));
+    }
+
+
+} 
